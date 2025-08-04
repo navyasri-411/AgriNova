@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6ffe6;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: #ffeb3b;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-right select, .top-right i {
+  background: white;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-section {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.search-section input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.fertilizer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.fertilizer-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.fertilizer-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.fertilizer-card .info {
+  padding: 15px;
+}
+
+.fertilizer-card .actions {
+  padding-bottom: 15px;
+}
+
+.fertilizer-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  animation: blink 1.5s infinite alternate;
+}
+
+.fertilizer-card .buy {
+  background-color: orange;
+}
+
+.fertilizer-card .cart {
+  background-color: green;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0.7; }
+}
+
+footer {
+  background-color: #2E7D32;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.platform-info {
+  background-color: #dcedc8;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
